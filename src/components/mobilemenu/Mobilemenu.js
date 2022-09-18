@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaAlignJustify, FaWindowClose } from "react-icons/fa";
 
 export default function Mobilemenu() {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(true);
   const toggle = () => {
     setState(!state);
   };
@@ -18,7 +18,7 @@ export default function Mobilemenu() {
   ];
   return (
     <Menu as="div" className="relative md:hidden inline-block text-left">
-      <Menu.Button onClick={toggle}>{state ? <FaWindowClose className="text-2xl" /> : <FaAlignJustify className="text-2xl" />}</Menu.Button>
+      <Menu.Button onClick={toggle}>{state ? <FaAlignJustify className="text-2xl" /> : <FaWindowClose className="text-2xl" />}</Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
