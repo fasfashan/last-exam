@@ -4,7 +4,7 @@ function Hero() {
       <h1 className="md:text-6xl text-4xl lg:w-10/12 leading-snug  font-bold">User Interface Designer, Front-end Engineer, Writer.</h1>
       <p className="md:w-8/12 text-lg leading-snug text-slate-600">I’m Fasha, a UI Designer and Front-end Engineer based in Bogor, Indonesia. Love design, code, and anything about technology.</p>
       <div className="flex space-x-8">
-        <a target="_blank" className="opacity-60 hover:opacity-80" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
+        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />
             <path
@@ -13,7 +13,7 @@ function Hero() {
             />
           </svg>
         </a>
-        <a target="_blank" className="opacity-60 hover:opacity-80" href="https://twitter.com/fasfashan">
+        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://twitter.com/fasfashan">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />
             <path
@@ -22,7 +22,7 @@ function Hero() {
             />
           </svg>
         </a>
-        <a target="_blank" className="opacity-60 hover:opacity-80" href="https://github.com/fasfashan">
+        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://github.com/fasfashan">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />
             <path
