@@ -1,19 +1,21 @@
 import Link from "next/link";
 import Button from "../button/Button";
-
+import { HiChevronRight } from "react-icons/hi";
 function PostCard({ title, date, description, slug }) {
   return (
-    <article className="my-4 py-4 ">
-      <h2 className="font-bold text-2xl my-4">{title}</h2>
-      <time className="text-gray-400">{date}</time>
-      <p className="mt-4 italic">{description}</p>
+    <div className="space-y-4 p-6 border border-zinc-200 mb-4 hover:shadow-md rounded-md">
+      <time className="text-slate-600 text-sm">{date}</time>
+      <h2 className="font-semibold text-base my-4">{title}</h2>
+      <p className="text-sm text-slate-600">{description}</p>
 
       <Link href="/blog/[slug]" as={`/blog/${slug}`}>
         <a>
-          <Button>Read More</Button>
+          <Button>
+            Read More <HiChevronRight />
+          </Button>
         </a>
       </Link>
-    </article>
+    </div>
   );
 }
 

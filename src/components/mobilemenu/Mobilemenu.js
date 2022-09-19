@@ -2,6 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { AiOutlineAlignLeft } from "react-icons/ai";
 import { FaAlignJustify, FaWindowClose } from "react-icons/fa";
 
 export default function Mobilemenu() {
@@ -18,7 +19,7 @@ export default function Mobilemenu() {
   ];
   return (
     <Menu as="div" className="relative md:hidden inline-block text-left">
-      <Menu.Button onClick={toggle}>{state ? <FaAlignJustify className="text-2xl" /> : <FaWindowClose className="text-2xl" />}</Menu.Button>
+      <Menu.Button onClick={toggle}>{state ? <AiOutlineAlignLeft className="text-2xl" /> : <AiOutlineAlignLeft className="text-teal-500 text-2xl" />}</Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
