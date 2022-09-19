@@ -43,7 +43,7 @@ function Experience() {
           <p className="text-slate-600 text-sm ">2020 — 2021</p>
         </div>
       </div>
-      <Button className="px-4 flex justify-center text-slate-600 py-3 rounded-md hover:text-teal-500 hover:bg-teal-100 bg-slate-100 w-full">
+      <Button className="px-4 flex justify-center text-slate-600 py-3 rounded-md hover:text-teal-500 hover:bg-teal-100 bg-zinc-100 w-full">
         Download my CV <HiArrowNarrowDown className="ml-1" />{" "}
       </Button>
     </div>
