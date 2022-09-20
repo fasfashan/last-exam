@@ -1,37 +1,41 @@
 import Link from "next/link";
 import AOS from "aos";
+
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { useEffect, useState } from "react";
+import { HiArrowNarrowRight, HiChevronRight } from "react-icons/hi";
+import Button from "../button/Button";
 function Hero() {
   useEffect(() => {
     AOS.init();
   }, []);
+  const [state, setState] = useState(<HiChevronRight />);
+  function onHover() {
+    setState(<HiArrowNarrowRight />);
+  }
+  function onLeave() {
+    setState(<HiChevronRight />);
+  }
+
   return (
-    <div className="space-y-4 mt-20 ">
-      <h1 data-aos="fade-up" data-aos-duration="800" className="md:text-5xl text-4xl lg:w-9/12 leading-tight  font-bold">
-        Hi, Saya Fasha.
-      </h1>
-      <p data-aos="fade-up" data-aos-duration="1000" className="md:w-8/12 text-lg leading-snug text-slate-600">
-        Saya adalah seorang perancang antarmuka pengguna dan juga insinyur perangkat lunak.{" "}
-        <Link href="/about">
-          <a className="text-teal-500 hover:text-teal-300">
-            {" "}
-            Lebih tentang saya <HiArrowNarrowRight className="inline-block" />
-          </a>
-        </Link>
-      </p>
-      <div data-aos="fade-up" data-aos-duration="1200" className="flex space-x-8">
-        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
-            <rect width="40" height="40" rx="20" fill="black" />
-            <path
-              d="M29.376 9H10.624C10.1933 9 9.78023 9.1711 9.47567 9.47567C9.1711 9.78023 9 10.1933 9 10.624V29.376C9 29.8067 9.1711 30.2198 9.47567 30.5243C9.78023 30.8289 10.1933 31 10.624 31H29.376C29.8067 31 30.2198 30.8289 30.5243 30.5243C30.8289 30.2198 31 29.8067 31 29.376V10.624C31 10.1933 30.8289 9.78023 30.5243 9.47567C30.2198 9.1711 29.8067 9 29.376 9ZM15.5572 27.7413H12.2496V17.2347H15.5572V27.7413ZM13.9011 15.7788C13.5259 15.7766 13.1598 15.6634 12.8488 15.4534C12.5379 15.2434 12.2962 14.946 12.1541 14.5987C12.0121 14.2514 11.9761 13.8699 12.0507 13.5022C12.1253 13.1345 12.3072 12.7971 12.5733 12.5326C12.8395 12.2682 13.178 12.0885 13.5462 12.0163C13.9144 11.944 14.2957 11.9825 14.642 12.1267C14.9884 12.271 15.2842 12.5147 15.4923 12.8269C15.7003 13.1392 15.8111 13.5061 15.8108 13.8813C15.8144 14.1324 15.7673 14.3818 15.6724 14.6144C15.5776 14.847 15.4368 15.0582 15.2586 15.2352C15.0804 15.4123 14.8684 15.5517 14.6351 15.6451C14.4019 15.7384 14.1523 15.7839 13.9011 15.7788ZM27.7489 27.7504H24.4428V22.0106C24.4428 20.3178 23.7232 19.7953 22.7943 19.7953C21.8135 19.7953 20.851 20.5347 20.851 22.0533V27.7504H17.5433V17.2424H20.7242V18.6983H20.7669C21.0863 18.0521 22.2046 16.9475 23.9111 16.9475C25.7567 16.9475 27.7504 18.0429 27.7504 21.2513L27.7489 27.7504Z"
-              fill="white"
-            />
-          </svg>
-        </a>
-        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://twitter.com/fasfashan">
+    <div className="space-y-6 mt-20 relative  ">
+      <div className="space-y-4">
+        <h1 data-aos="fade-up" data-aos-duration="800" className="md:text-5xl text-4xl lg:w-9/12 leading-tight  font-bold">
+          Hi, Saya Fasha.
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000" className="md:w-6/12 text-lg leading-snug text-slate-600">
+          Saya adalah seorang perancang antarmuka pengguna dan juga insinyur perangkat lunak.{" "}
+          <Link href="/about">
+            <a className="text-teal-500 hover:text-teal-300">
+              {" "}
+              Lebih tentang saya <HiArrowNarrowRight className="inline-block" />
+            </a>
+          </Link>
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1200" className="flex gap-4">
+        <a rel="noreferrer" target="_blank" href="https://twitter.com/fasfashan">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />
             <path
@@ -40,8 +44,8 @@ function Hero() {
             />
           </svg>
         </a>
-        <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://github.com/fasfashan">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
+        <a rel="noreferrer" target="_blank" className="" href="https://github.com/fasfashan">
+          <svg className="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />
             <path
               d="M19.9953 7C16.7456 7.00169 13.6026 8.15263 11.1281 10.247C8.65362 12.3414 7.00906 15.2427 6.48849 18.4321C5.96792 21.6215 6.60527 24.8911 8.28661 27.6561C9.96794 30.4211 12.5836 32.5013 15.6659 33.5248C16.3459 33.651 16.602 33.2295 16.602 32.8712C16.602 32.5128 16.5884 31.4738 16.5839 30.3379C12.7759 31.1606 11.9712 28.731 11.9712 28.731C11.3501 27.1533 10.4525 26.7386 10.4525 26.7386C9.2104 25.8957 10.5455 25.9115 10.5455 25.9115C11.9214 26.0084 12.6444 27.3156 12.6444 27.3156C13.8639 29.3958 15.8472 28.7941 16.627 28.4425C16.7494 27.5613 17.1052 26.9618 17.4974 26.6214C14.4555 26.2789 11.2595 25.1114 11.2595 19.8961C11.2406 18.5436 11.7454 17.2356 12.6694 16.2428C12.5288 15.9002 12.0596 14.5164 12.8031 12.6367C12.8031 12.6367 13.9523 12.2716 16.568 14.0318C18.8117 13.4217 21.1788 13.4217 23.4225 14.0318C26.0359 12.2716 27.1829 12.6367 27.1829 12.6367C27.9286 14.5119 27.4594 15.8957 27.3189 16.2428C28.2458 17.2358 28.7516 18.546 28.731 19.9007C28.731 25.1272 25.5282 26.2789 22.4818 26.6147C22.9714 27.0384 23.4089 27.8655 23.4089 29.1367C23.4089 30.9577 23.393 32.4227 23.393 32.8712C23.393 33.234 23.6401 33.6577 24.3337 33.5248C27.4163 32.5012 30.0322 30.4206 31.7135 27.6551C33.3948 24.8896 34.0319 21.6196 33.5107 18.4299C32.9895 15.2402 31.3442 12.3389 28.8689 10.2449C26.3936 8.15081 23.2498 7.00062 19.9998 7H19.9953Z"
@@ -78,6 +82,27 @@ function Hero() {
           </svg>
         </a>
       </div>
+      <div>
+        <Link href="/articles">
+          <a>
+            <Button onMouseEnter={onHover} onMouseLeave={onLeave} className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500">
+              Baca blog saya {state}
+            </Button>
+          </a>
+        </Link>
+      </div>
+
+      <svg className="md:opacity-100 absolute -top-24 -right-24 md:right-0  opacity-60" xmlns="http://www.w3.org/2000/svg" width="445" height="424" viewBox="0 0 445 424" fill="none">
+        <path opacity="0.1" d="M131.064 92.6696L222.454 147.067V239.043L131.064 184.153V92.6696Z" fill="#14B8A6" />
+        <path opacity="0.2" d="M313.523 92.7244L222.136 147.065V238.944L313.523 184.112V92.7244Z" fill="#14B8A6" />
+        <path className="animate-bounce" opacity="0.3" d="M222.454 38.559L313.389 93.176L222.454 147.793L131.518 93.176L222.454 38.559Z" stroke="#14B8A6" stroke-width="1.5" />
+        <path opacity="0.1" d="M222.082 238.627L313.472 293.024V385L222.082 330.11V238.627Z" fill="#14B8A6" />
+        <path opacity="0.2" d="M404.541 238.681L313.154 293.022V384.901L404.541 330.069V238.681Z" fill="#14B8A6" />
+        <path opacity="0.3" d="M313.472 184.516L404.407 239.133L313.472 293.75L222.537 239.133L313.472 184.516Z" stroke="#14B8A6" stroke-width="1" />
+        <path opacity="0.1" d="M40.0453 238.627L131.435 293.024V385L40.0453 330.11V238.627Z" fill="#14B8A6" />
+        <path className="animate-pulse" opacity="0.2" d="M222.505 238.681L131.118 293.022V384.901L222.505 330.069V238.681Z" fill="#14B8A6" />
+        <path opacity="0.3" d="M131.436 184.516L222.371 239.133L131.436 293.75L40.5002 239.133L131.436 184.516Z" stroke="#14B8A6" stroke-width="1" />
+      </svg>
     </div>
   );
 }

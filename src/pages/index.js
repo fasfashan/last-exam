@@ -14,9 +14,10 @@ export default function Home({ posts }) {
     <>
       <Seo />
       <Hero />
-      <div className="grid md:grid-cols-12 grid-cols-4 gap-4  mt-20">
+      <h3 className=" font-medium text-lg mt-20 mb-4">Artikel terakhir</h3>
+      <div className="grid items-baseline md:grid-cols-12 grid-cols-4 gap-4 ">
         <article data-aos="fade-up" data-aos-duration="800" className="md:col-span-6 col-span-12">
-          {posts.map((post) => (
+          {posts.slice(0, 2).map((post) => (
             <PostCard key={post.slug} title={post.data.title} date={post.data.date} description={post.data.description} slug={post.slug} />
           ))}
         </article>

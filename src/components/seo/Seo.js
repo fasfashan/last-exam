@@ -4,17 +4,17 @@ import { useRouter } from "next/router";
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: "Fasha Fadillah",
-  siteName: "Design, Code, Everything",
-  description: "This is a big task from StudyJam NestAcademy",
+  siteName: "Desain, Kode, Teknologi",
+  description: "Ini adalah situs pribadi milik saya.",
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: "https://tsnext-tw.thcl.dev",
+  url: "https://fashafadillah.xyz",
   type: "website",
   robots: "follow, index",
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: "https://tsnext-tw.thcl.dev/images/large-og.png",
+  image: "https://last-exam-five.vercel.app/assets/og-image.jpg",
 };
 
 export default function Seo(props) {
@@ -58,7 +58,7 @@ export default function Seo(props) {
         <>
           <meta property="article:published_time" content={meta.date} />
           <meta name="publish_date" property="og:publish_date" content={meta.date} />
-          <meta name="author" property="article:author" content="Theodorus Clarence" />
+          <meta name="author" property="article:author" content="Fasha Fadillah" />
         </>
       )}
 

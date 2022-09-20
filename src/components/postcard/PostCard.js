@@ -16,7 +16,7 @@ function PostCard({ title, date, description, slug }) {
 
       <Link className="" href="/blog/[slug]" as={`/blog/${slug}`}>
         <a className=" text-sm text-teal-500 font-medium hover:text-teal-200">
-          Read More <HiChevronRight className="inline-block" />
+          Lanjut baca <HiChevronRight className="inline-block" />
         </a>
       </Link>
     </div>
