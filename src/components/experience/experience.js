@@ -1,9 +1,15 @@
 import { BsBriefcase } from "react-icons/bs";
 import Button from "../button/Button";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { HiArrowNarrowDown } from "react-icons/hi";
 function Experience() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="p-6 space-y-6 text rounded-md shadow-sm border border-zinc-200">
+    <div data-aos="fade-up" data-aos-duration="800" className="p-6 space-y-6 text rounded-md shadow-sm border border-zinc-200">
       <div className="flex items-center text-base">
         <BsBriefcase className="text-zinc-400" /> <p className="ml-2 font-medium">Work</p>
       </div>

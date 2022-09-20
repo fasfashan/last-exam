@@ -1,9 +1,27 @@
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { HiArrowNarrowRight } from "react-icons/hi";
 function Hero() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="space-y-4 mt-20">
-      <h1 className="md:text-5xl text-4xl lg:w-8/12 leading-tight  font-bold">User Interface Designer, Front-end Engineer, Writer.</h1>
-      <p className="md:w-8/12 text-lg leading-snug text-slate-600">I’m Fasha, a UI Designer and Front-end Engineer based in Bogor, Indonesia. Love design, code, and anything about technology.</p>
-      <div className="flex space-x-8">
+    <div className="space-y-4 mt-20 ">
+      <h1 data-aos="fade-up" data-aos-duration="800" className="md:text-5xl text-4xl lg:w-9/12 leading-tight  font-bold">
+        Hi, Saya Fasha.
+      </h1>
+      <p data-aos="fade-up" data-aos-duration="1000" className="md:w-8/12 text-lg leading-snug text-slate-600">
+        Saya adalah seorang perancang antarmuka pengguna dan juga insinyur perangkat lunak.{" "}
+        <Link href="/about">
+          <a className="text-teal-500 hover:text-teal-300">
+            {" "}
+            Lebih tentang saya <HiArrowNarrowRight className="inline-block" />
+          </a>
+        </Link>
+      </p>
+      <div data-aos="fade-up" data-aos-duration="1200" className="flex space-x-8">
         <a rel="noreferrer" target="_blank" className="opacity-60 hover:opacity-80" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" rx="20" fill="black" />

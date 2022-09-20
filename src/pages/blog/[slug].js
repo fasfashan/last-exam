@@ -9,12 +9,13 @@ function Post({ data, content, image }) {
   return (
     <>
       <Seo templateTitle={data.title} description={data.description} image={data.image} />
-
-      <h1 className="font-bold text-7xl mt-24 mb-12">{data.title}</h1>
-      <time className="text-gray-500 italic">{data.date}</time>
-      <p className="prose mt-12">
-        <MDXRemote {...content} />
-      </p>
+      <article className="max-w-2xl space-y-4 mx-auto mt-20">
+        <time className="text-gray-500 ">{data.date}</time>
+        <h1 className="md:text-4xl text-3xl  leading-tight  font-bold">{data.title}</h1>
+        <p className="prose">
+          <MDXRemote {...content} />
+        </p>
+      </article>
     </>
   );
 }

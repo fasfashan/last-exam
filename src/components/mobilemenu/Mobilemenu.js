@@ -1,9 +1,8 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiOutlineAlignLeft } from "react-icons/ai";
-import { FaAlignJustify, FaWindowClose } from "react-icons/fa";
 
 export default function Mobilemenu() {
   const [state, setState] = useState(true);

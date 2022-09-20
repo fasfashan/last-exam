@@ -4,14 +4,13 @@ import Mobilemenu from "../mobilemenu/Mobilemenu";
 function Header() {
   const router = useRouter();
   const menuItems = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
-    { title: "Articles", href: "/articles" },
+    { title: "Beranda", href: "/" },
+    { title: "Tentang", href: "/about" },
+    { title: "Artikel", href: "/articles" },
   ];
   return (
-    <header className="mt-4">
-      <nav className="flex justify-between">
+    <header className="mt-4 ">
+      <nav className="flex justify-between ">
         <Link href="/">
           <a>
             <svg className="hover:opacity-60" xmlns="http://www.w3.org/2000/svg" width="74" height="19" viewBox="0 0 74 19" fill="none">
