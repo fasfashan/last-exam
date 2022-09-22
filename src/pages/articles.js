@@ -9,13 +9,14 @@ function Articles({ posts }) {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-duration="800" className="mt-20">
+    <ul className="mt-20 grid gap-4 sm:grid-cols-2 xl:grid-cols-3" data-aos="fade-up" data-aos-duration="800">
       {posts.map((post) => (
         <PostCard key={post.slug} title={post.data.title} date={post.data.date} description={post.data.description} slug={post.slug} />
       ))}
-    </div>
+    </ul>
   );
 }
+
 export default Articles;
 export const getStaticProps = () => {
   const posts = getPosts();
