@@ -18,11 +18,11 @@ function Experience() {
           <div className="w-6 h-6 shadow-sm  text-sm flex items-center justify-center rounded-full bg-blue-700 text-white font-medium">M</div>
           <div className="ml-2">
             <p className="text-sm font-medium ">Murni Solusindo</p>
-            <p className="text-slate-600 text-sm ">Perancang antarmuka pengguna</p>
+            <p className="text-slate-500 text-sm ">Perancang antarmuka pengguna</p>
           </div>
         </div>
         <div>
-          <p className="text-slate-600 text-sm ">2022 — Present</p>
+          <p className="text-slate-500 text-sm ">2022 — Present</p>
         </div>
       </div>
       <div className="flex  justify-between ">
@@ -30,11 +30,11 @@ function Experience() {
           <div className="w-6 h-6 shadow-sm  text-sm flex items-center justify-center rounded-full bg-green-900 text-white font-medium">K</div>
           <div className="ml-2">
             <p className="text-sm font-medium ">Kiki.id</p>
-            <p className="text-slate-600 text-sm ">Desain Grafis</p>
+            <p className="text-slate-500 text-sm ">Desain Grafis</p>
           </div>
         </div>
         <div>
-          <p className="text-slate-600 text-sm ">2021 — 2022</p>
+          <p className="text-slate-500 text-sm ">2021 — 2022</p>
         </div>
       </div>
       <div className="flex  justify-between ">
@@ -42,11 +42,11 @@ function Experience() {
           <div className="w-6 h-6 shadow-sm  text-sm flex items-center justify-center rounded-full bg-blue-400 font-medium text-white">G</div>
           <div className="ml-2">
             <p className="text-sm font-medium ">Gagas Studio</p>
-            <p className="text-slate-600 text-sm ">Pendesain Situs</p>
+            <p className="text-slate-500 text-sm ">Pendesain Situs</p>
           </div>
         </div>
         <div>
-          <p className="text-slate-600 text-sm ">2020 — 2021</p>
+          <p className="text-slate-500 text-sm ">2020 — 2021</p>
         </div>
       </div>
       <Button className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500 w-full">

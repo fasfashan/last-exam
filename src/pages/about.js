@@ -9,11 +9,11 @@ function About() {
   }, []);
   return (
     <>
-      <Seo />
+      <Seo templateTitle="About" />
       <div data-aos="fade-up" data-aos-duration="800" className="grid items-baseline mt-20 md:grid-cols-12 grid-cols-4 gap-y-20">
         <div className="md:col-span-7 col-span-12 space-y-4">
           <h1 className="md:text-5xl text-4xl  leading-tight  font-bold">Pencinta desain, kode, dan teknologi. </h1>
-          <p className="leading-relaxed text-slate-600 text-base ">
+          <p className="leading-relaxed text-slate-500 text-base ">
             Hi, saya Fasha. Saya mulai belajar pemrograman web sekitar awal tahun 2019. Dimulai dari menonton video di kanal milik Pak{" "}
             <a className="text-teal-500 font-medium" rel="noreferrer" target="_blank" href="https://www.youtube.com/c/WebProgrammingUNPAS">
               Shandika Galih (WebProgrammingUNPAS).

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: "Fasha Fadillah",
-  siteName: "Desain, Kode, Teknologi",
+  siteName: "fashafadillah.xyz",
   description: "Ini adalah situs pribadi milik saya.",
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: "https://fashafadillah.xyz",

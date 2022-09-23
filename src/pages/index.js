@@ -12,9 +12,9 @@ export default function Home({ posts }) {
   }, []);
   return (
     <>
-      <Seo />
+      <Seo templateTitle="" siteName="Halo" />
       <Hero />
-      <h3 className=" font-medium text-lg mt-28 mb-4">Artikel terakhir</h3>
+      <h3 className=" font-medium text-lg mt-28 mb-4 dark:text-white">Artikel terakhir</h3>
       <div className="grid items-baseline md:grid-cols-12 grid-cols-4 gap-4 ">
         <article data-aos="fade-up" data-aos-duration="800" className="md:col-span-6 col-span-12">
           {posts.slice(0, 2).map((post) => (

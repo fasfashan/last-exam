@@ -12,7 +12,7 @@ function Post({ data, content, image }) {
       <article className="max-w-2xl space-y-4 mx-auto mt-20">
         <time className="text-gray-500 ">{data.date}</time>
         <h1 className="md:text-4xl text-3xl  leading-tight  font-bold">{data.title}</h1>
-        <p className="prose">
+        <p className="prose text-slate-500">
           <MDXRemote {...content} />
         </p>
       </article>
