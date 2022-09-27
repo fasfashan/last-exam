@@ -6,6 +6,20 @@ import "aos/dist/aos.css";
 import { HiArrowNarrowDown } from "react-icons/hi";
 import Link from "next/link";
 function Experience() {
+  const onClick = () => {
+    // using Java Script method to get PDF file
+    fetch("./assets/resume-muhamad-fasha-fadillah.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "resume-muhamad-fasha-fadillah.pdf";
+        alink.click();
+      });
+    });
+  };
   useEffect(() => {
     AOS.init();
   }, []);
@@ -50,13 +64,10 @@ function Experience() {
           <p className="text-slate-500 text-sm ">2020 — 2021</p>
         </div>
       </div>
-      <Link href="/assets/resume-muhamad-fasha-fadillah.pdf">
-        <a href="">
-          <Button className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500 w-full">
-            Download my CV <HiArrowNarrowDown className="ml-1" />{" "}
-          </Button>
-        </a>
-      </Link>
+
+      <Button onClick={onClick} className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500 w-full">
+        Download my CV <HiArrowNarrowDown className="ml-1" />{" "}
+      </Button>
     </div>
   );
 }
