@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiArrowNarrowDown } from "react-icons/hi";
+import Link from "next/link";
 function Experience() {
   useEffect(() => {
     AOS.init();
@@ -49,9 +50,13 @@ function Experience() {
           <p className="text-slate-500 text-sm ">2020 — 2021</p>
         </div>
       </div>
-      <Button className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500 w-full">
-        Download my CV <HiArrowNarrowDown className="ml-1" />{" "}
-      </Button>
+      <Link href="/assets/resume-muhamad-fasha-fadillah.pdf">
+        <a href="">
+          <Button className="px-4 flex justify-center text-white py-3 rounded-md hover:bg-teal-300  bg-teal-500 w-full">
+            Download my CV <HiArrowNarrowDown className="ml-1" />{" "}
+          </Button>
+        </a>
+      </Link>
     </div>
   );
 }
