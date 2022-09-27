@@ -38,6 +38,7 @@ export default function Seo(props) {
   return (
     <Head>
       <title>{meta.title}</title>
+      <meta name="google-site-verification" content="RxuK-oLwPzkLO0j034iXE9WQ63YR5IUe33gY272Rqxk" />
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
