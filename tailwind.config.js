@@ -10,6 +10,10 @@ module.exports = {
           "50%": { transform: "translateY(0)" },
         },
       },
+      colors: {
+        primary: "#046663",
+        secondary: "#3A3A4C",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

@@ -1,6 +1,12 @@
 function Button(props) {
   return (
-    <button onClick={props.onClick} data-testid="button" onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} className={`text-teal-500 font-semibold text-sm mt-4 mb-2 flex items-center ${props.className}`}>
+    <button
+      onClick={props.onClick}
+      data-testid="button"
+      onMouseEnter={props.onMouseEnter}
+      onMouseLeave={props.onMouseLeave}
+      className={`bg-primary font-medium px-4 py-2 flex items-center rounded-md hover:transition-all hover:bg-opacity-90 delay-150  ${props.className}`}
+    >
       {props.children}
     </button>
   );
