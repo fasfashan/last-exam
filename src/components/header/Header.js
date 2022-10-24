@@ -10,14 +10,14 @@ function Header() {
     { title: "Blog", href: "/blog" },
   ];
   return (
-    <header className="py-3 md:px-4 px-6 shadow-sm bg-white top-0 sticky z-10 ">
-      <nav className="container mx-auto max-w-5xl flex md:px-4 px-6   justify-between  items-center ">
+    <header className="py-3 md:px-4  shadow-sm bg-white top-0 sticky z-10 ">
+      <nav className="container mx-auto max-w-5xl flex md:px-4 px-4   justify-between  items-center ">
         <Link href="/">
           <a>
             <Logo />
           </a>
         </Link>
-        <ul className="flex items-center space-x-8">
+        <ul className="flex items-center md:space-x-8 space-x-4">
           {menuItems.map((menu, index) => {
             return (
               <Link href={menu.href} key={index}>

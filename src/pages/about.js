@@ -33,7 +33,7 @@ function About() {
           </p>
         </div>
         <div className="md:col-start-9 md:col-end-13 col-span-12 w-full ">
-          <Image className=" object-cover  dark:bg-zinc-800" src="/assets/photoprofile.jpg" layout="responsive" height={1032} width={932} alt="Fasha" />
+          <Image className=" object-cover  " src="/assets/photoprofile.jpg" layout="responsive" height={1032} width={932} alt="Fasha" />
         </div>
       </div>
     </>
