@@ -1,6 +1,7 @@
 import React from "react";
 import AOS from "aos";
-import { Tooltip, Button } from "@mui/material";
+import { Tooltip } from "@mui/material";
+import Button from "../button/Button";
 import "aos/dist/aos.css";
 import Image from "next/future/image";
 import KRL from "../../../public/assets/KRL Access.png";
@@ -18,8 +19,8 @@ const Projects = () => {
         <div data-aos="fade-up" data-aos-duration="2000" className="md:col-start-1 md:col-end-7 col-start-1 col-end-13">
           <Image src={KRL} alt="KRL Access" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000" className=" space-y-6 md:col-start-7 md:col-end-13 col-start-1 col-end-13">
-          <div className="space-y-2 ">
+        <div data-aos="fade-down" data-aos-duration="2000" className=" space-y-6 md:col-start-7 md:col-end-13 col-start-1 col-end-13 shadow-sm border border-slate-200 bg-backblue px-6 py-6 rounded-md">
+          <div className="space-y-2  ">
             <h3 className="text-2xl font-semibold">Re-design KRL Access</h3>
             <p className="text-lg text-secondary">
               Sebagai pekerja yang menggunakan KRL Commuter Line setiap hari, saya merasa terbantu akan adanya KRL Access. Saya pasti membuka KRL Access ketika ingin berangkat dan pulang kerja, atau ketika lembur di kantor dan ingin tahu
@@ -39,16 +40,16 @@ const Projects = () => {
             }}
           >
             <Button className="bg-primary text-sm font-medium text-white  capitalize rounded-full px-3 rounded-full  hover:bg-opacity-90 hover:cursor-not-allowed hover:bg-primary ">
-              Case study <HiChevronRight className="ml-2" />
+              Case study <HiChevronRight className="ml-1" />
             </Button>
           </Tooltip>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-6 items-center  ">
+      <div className="grid grid-cols-12 gap-6 items-baseline  ">
         <div data-aos="fade-down" data-aos-duration="2000" className="md:col-start-1 md:col-end-7 col-start-1 col-end-13">
           <Image src={Parabel} alt="Parabel" className="rounded-lg" />
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" className=" space-y-6 md:col-start-7 md:col-end-13 col-start-1 col-end-13">
+        <div data-aos="fade-up" data-aos-duration="2000" className=" space-y-6 md:col-start-7 md:col-end-13 col-start-1 col-end-13 shadow-sm bg-backblue px-6 py-6 rounded-lg border border-slate-200">
           <div className="space-y-2 ">
             <h3 className="text-2xl font-semibold">Parabel News</h3>
             <p className="text-lg text-secondary">
@@ -69,7 +70,7 @@ const Projects = () => {
             }}
           >
             <Button className="bg-primary text-sm font-medium text-white  capitalize rounded-full px-3 rounded-full  hover:bg-opacity-90 hover:cursor-not-allowed hover:bg-primary ">
-              Case study <HiChevronRight className="ml-2" />
+              Case study <HiChevronRight className="ml-1" />
             </Button>
           </Tooltip>
         </div>

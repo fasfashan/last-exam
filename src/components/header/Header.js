@@ -6,7 +6,7 @@ function Header() {
     { title: "Contact", href: "mailto:pasapadilah1410@gmail.com" },
   ];
   return (
-    <header className="py-6 md:px-  shadow-sm bg-white sticky z-10 ">
+    <header className="py-6">
       <nav className="container font-medium mx-auto max-w-5xl flex md:px-4    justify-between  items-center ">
         <Link href="/">
           <a>

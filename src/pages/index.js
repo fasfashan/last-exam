@@ -12,6 +12,7 @@ export default function Home({ posts }) {
   return (
     <>
       <Seo templateTitle="" siteName="Halo" />
+    
       <Hero />
       <Projects />
       <div className="grid items-baseline md:grid-cols-12 grid-cols-4 gap-4 "></div>

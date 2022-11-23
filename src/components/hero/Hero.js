@@ -1,7 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-
 import Button from "../button/Button";
 import { HiChevronRight } from "react-icons/hi";
 import ButtonText from "../button/ButtonText";
@@ -12,8 +11,8 @@ function Hero() {
   }, []);
 
   return (
-    <div className="md:mt-36 mt-24 ">
-      <h1 data-aos="fade-up" data-aos-duration="1500" className="md:text-7xl text-5xl  text-primary font-medium leading-tight">
+    <div className="md:mt-36 mt-16 ">
+      <h1 data-aos="fade-up" data-aos-duration="1500" className="md:text-7xl text-4xl  text-primary font-medium leading-tight">
         Fasha Fadillah is user interface designer, based in Bogor, Indonesia. Specialize in web design and mobile design.{" "}
       </h1>
       <div data-aos="fade-right" data-aos-duration="2000" className="mt-8 flex space-x-4">
