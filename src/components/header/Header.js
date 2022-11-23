@@ -1,17 +1,13 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Logo from "../../../public/assets/Logo.js";
 function Header() {
-  const router = useRouter();
   const menuItems = [
-    { title: "Home", href: "/" },
     { title: "About", href: "/about" },
-    { title: "Projects", href: "#projects" },
-    { title: "Blog", href: "/blog" },
+    { title: "Contact", href: "mailto:pasapadilah1410@gmail.com" },
   ];
   return (
-    <header className="py-3 md:px-4  shadow-sm bg-white top-0 sticky z-10 ">
-      <nav className="container mx-auto max-w-5xl flex md:px-4 px-4   justify-between  items-center ">
+    <header className="py-6 md:px-  shadow-sm bg-white sticky z-10 ">
+      <nav className="container font-medium mx-auto max-w-5xl flex md:px-4    justify-between  items-center ">
         <Link href="/">
           <a>
             <Logo />
@@ -21,7 +17,7 @@ function Header() {
           {menuItems.map((menu, index) => {
             return (
               <Link href={menu.href} key={index}>
-                <a className={`${router.pathname === `${menu.href}` ? "font-medium text-primary border-b border-primary" : ""} text-sm hover:opacity-60`}>{menu.title}</a>
+                <a>{menu.title}</a>
               </Link>
             );
           })}

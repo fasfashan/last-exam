@@ -5,7 +5,7 @@ function Button(props) {
       data-testid="button"
       onMouseEnter={props.onMouseEnter}
       onMouseLeave={props.onMouseLeave}
-      className={`bg-primary font-medium px-4 py-2 flex items-center rounded-md hover:transition-all hover:bg-opacity-90 delay-150  ${props.className}`}
+      className={`bg-primary font-semibold px-4 py-2 flex items-center rounded-full hover:transition-all hover:bg-opacity-70 delay-100   ${props.className}`}
     >
       {props.children}
     </button>
