@@ -22,8 +22,8 @@ const Projects = () => {
           <Image src={LandingLogin} />
         </div>
         <div class=" col-span-6 flex flex-col md:gap-y-4 gap-y-3   ">
-          <video src={myvideo} autoPlay={true} muted={true} loop={true}></video>
-          <video src={myvideo} autoPlay={true} muted={true} loop={true}></video>
+          <video src={myvideo} autoPlay muted loop></video>
+          <video src={myvideo} autoPlay muted loop></video>
         </div>
         <div class="row-span-2 col-span-2"></div>
       </div>
