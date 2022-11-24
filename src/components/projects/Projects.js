@@ -8,7 +8,6 @@ import KRL from "../../../public/assets/KRL Access.png";
 import Parabel from "../../../public/assets/Parabel.png";
 import { HiChevronRight } from "react-icons/hi";
 import myvideo from "../../../public/assets/Stocks.mp4";
-import Interior from "../../../public/assets/Interior.mp4";
 import LandingLogin from "../../../public/assets/LandingLogin .png";
 function Hero() {
   useEffect(() => {
