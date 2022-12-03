@@ -9,6 +9,7 @@ module.exports = {
           "50%": { transform: "translateY(0)" },
         },
       },
+
       colors: {
         primary: "#0A2540",
         secondary: "#3A3A4C",

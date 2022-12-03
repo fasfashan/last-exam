@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import AOS from "aos";
-import { Tooltip } from "@mui/material";
 import Button from "../button/Button";
+import ButtonText from "../button/ButtonText";
 import "aos/dist/aos.css";
 import Image from "next/future/image";
-import KRL from "../../../public/assets/KRL Access.png";
-import Parabel from "../../../public/assets/Parabel.png";
-import { HiChevronRight } from "react-icons/hi";
-import myvideo from "../../../public/assets/Stocks.mp4";
-import LandingLogin from "../../../public/assets/LandingLogin .png";
+import Niagahoster from "/public/assets/Lomba Niagahoster.webp";
+import StocksApp from "/public/assets/Stocks.webp";
 function Hero() {
   useEffect(() => {
     AOS.init();
@@ -16,48 +13,24 @@ function Hero() {
 }
 const Projects = () => {
   return (
-    <section id="projects" className="mt-20  space-y-60 ">
-      <div class="grid grid-rows-1 grid-flow-col gap-3 d">
-        <div data-aos="fade-down" data-aos-duration="2000" class="row-span-4 col-span-8">
-          <Image src={LandingLogin} />
+    <section id="projects" className="mt-60 grid grid-cols-12 gap-6 items-center  ">
+      <div data-aos="fade-down" data-aos-duration="1500" className="md:col-span-6 col-span-12 space-y-6">
+        <Image src={Niagahoster} alt="Lomba Landing Page Niagahoster" className="rounded-md " />
+        <div className="space-y-2">
+          <h2 className=" text-primary text-2xl  font-semibold">Lomba Landing Page Niagahoster</h2>
+          <p className="text-secondary text-lg">
+            Pertengahan Juni, ketika sedang asyik berselancar di Instagram, saya melihat postingan dari Niagahoster yang sedang mengadakan lomba membuat landing page. Lalu karena tertarik, saya mengunjungi detail artikel tersebut.{" "}
+          </p>
         </div>
-        <div class=" col-span-6 flex flex-col md:gap-y-4 gap-y-3   ">
-          <video src={myvideo} autoPlay muted loop></video>
-          <video src={myvideo} autoPlay muted loop></video>
-        </div>
-        <div class="row-span-2 col-span-2"></div>
+        <ButtonText className="text-primary underline">Continue Reading 📖</ButtonText>
       </div>
-
-      {/* Project */}
-      <div className="grid grid-cols-12 gap-6 items-baseline  ">
-        <div data-aos="fade-down" data-aos-duration="2000" className="md:col-start-1 md:col-end-7 col-start-1 col-end-13">
-          <Image src={Parabel} alt="Parabel" className="rounded-lg" />
+      <div data-aos="fade-up" data-aos-duration="1500" className="md:col-span-6 col-span-12 space-y-6">
+        <Image src={StocksApp} className="rounded-md " />
+        <div className="space-y-2">
+          <h2 className=" text-primary text-2xl  font-semibold">Jual Beli Saham Mobile App</h2>
+          <p className="text-secondary text-lg">Memudahkan pengguna mengikuti saham dan pasar. Pengguna dapat melihat chart pergerakan naik turun saham, harga beli dan jual, dan sebuah CTA untuk membeli saham tersebut.</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" className=" space-y-6 md:col-start-7 md:col-end-13 col-start-1 col-end-13 shadow-sm bg-backblue px-6 py-6 rounded-lg border border-slate-200">
-          <div className="space-y-2 ">
-            <h3 className="text-2xl font-semibold">Parabel News</h3>
-            <p className="text-lg text-secondary">
-              Klien dan kebetulan teman satu kampus saya ini tetiba menghubungi saya di pertengahan bulan September, 2022. Ia ingin mewujudkan cita-citanya, yaitu memiliki media berbasis website sendiri, dan tentunya media yang tidak
-              diintervensi oleh pihak mana pun.
-            </p>
-          </div>
-          <Tooltip
-            className="hover:opacity-50 font-medium"
-            classes={{
-              tooltip: "rounded-md bg-primary text-white",
-            }}
-            title="Case study in progress"
-            content="Material Tailwind"
-            animate={{
-              mount: { scale: 1, y: 0 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <Button className="bg-primary text-sm font-medium text-white  capitalize rounded-full px-3 rounded-full  hover:bg-opacity-90 hover:cursor-not-allowed hover:bg-primary ">
-              Case study <HiChevronRight className="ml-1" />
-            </Button>
-          </Tooltip>
-        </div>
+        <ButtonText className="text-primary underline">Case study in progress💪🏻</ButtonText>
       </div>
     </section>
   );

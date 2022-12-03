@@ -7,7 +7,7 @@ function Header() {
   ];
   return (
     <header className="py-6">
-      <nav className="container font-medium mx-auto max-w-5xl flex md:px-4    justify-between  items-center ">
+      <nav className="container font-semibold hover:opacity-80 mx-auto max-w-5xl flex     justify-between  items-center ">
         <Link href="/">
           <a>
             <Logo />

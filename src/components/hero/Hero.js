@@ -11,20 +11,9 @@ function Hero() {
   }, []);
 
   return (
-    <div className="md:mt-36 mt-16 ">
-      <h1 data-aos="fade-up" data-aos-duration="1500" className="md:text-7xl text-4xl  text-primary font-medium leading-tight">
-        Fasha Fadillah is user interface designer, based in Bogor, Indonesia. Specialize in web design and mobile design.{" "}
-      </h1>
-      <div data-aos="fade-right" data-aos-duration="2000" className="mt-8 flex space-x-4">
-        <Link href="/about">
-          <Button className="text-white ">
-            About me <HiChevronRight className="ml-1" />
-          </Button>
-        </Link>
-        <ButtonText>
-          Selected Work <HiChevronRight className="ml-1" />
-        </ButtonText>
-      </div>
+    <div data-aos="fade-up" data-aos-duration="1500" className="md:mt-36 mt-16 ">
+      <h1 className="md:text-7xl  text-4xl  text-primary font-medium leading-tight">Fasha Fadillah is user interface designer, based in Bogor, Indonesia. Specialize in web design and mobile design. </h1>
+      <p className="mt-6 text-xl text-secondary">Scroll down to see the portfolio ↓</p>
     </div>
   );
 }
