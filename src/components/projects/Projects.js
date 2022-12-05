@@ -49,7 +49,9 @@ const Projects = () => {
         </div>
         <div className="mt-4">
           <h2 className=" text-primary text-lg  font-bold">Prowork: Coworking Space Web App</h2>
-          <p className="text-secondary text-lg">Memudahkan pengguna mengikuti saham dan pasar. Pengguna dapat melihat chart pergerakan naik turun saham, harga beli dan jual, dan sebuah CTA untuk membeli saham tersebut.</p>
+          <p className="text-secondary text-lg">
+            Ruang coworking adalah ruang kerja bersama yang biasanya digunakan oleh pekerja lepas, pengusaha, pekerja jarak jauh, dan profesional independen lainnya. Website ini memudahkan mereka mencari tempat untuk bekerja.
+          </p>
         </div>
         <div className="flex items-center space-x-2">
           <a className="text-lg font-semibold underline text-primary">In Progress</a>

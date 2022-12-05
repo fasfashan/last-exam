@@ -39,7 +39,7 @@ const Lombaniagahoster = () => {
 
       <div className="md:mt-20 mt-16 md:px-20">
         <div className="grid grid-cols-12">
-          <h1 className="md:text-5xl text-primary mb-8 col-span-12  text-4xl  text-primary font-semibold leading-tight">Lomba Landing Page: Journey with Niagahoster</h1>
+          <h1 className="md:text-5xl  mb-8 col-span-12  text-4xl  text-primary font-semibold leading-tight">Lomba Landing Page: Journey with Niagahoster</h1>
           <div className="col-span-12">
             <Image src={Niagahoster} alt="Landing page niagahoster" />
           </div>
@@ -52,7 +52,7 @@ const Lombaniagahoster = () => {
             </p>
             <div className="flex items-center space-x-2 mt-2">
               <a target="_blank" rel="noreferrer" href="https://www.niagahoster.co.id/blog/lomba-landing-page/" className="text-lg font-semibold underline text-primary">
-                Kunjung artikel
+                Kunjungi artikel
               </a>
 
               <FiExternalLink />
