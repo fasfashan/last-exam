@@ -26,7 +26,7 @@ function Hero() {
           </div>
         </div>
         <div className="md:col-span-8 col-span-12 flex items-center bg-primary">
-          <video autoPlay loop muted className="p-10 rounded-lg" src={Stocks} />
+          <video autoPlay loop muted playsInline className="p-10 rounded-lg" src={Stocks} />
         </div>
       </div>
     </div>

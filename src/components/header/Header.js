@@ -29,7 +29,7 @@ function Header() {
             <Logo />
           </a>
         </Link>
-        <ul className="flex items-center space-x-8">
+        <ul className="flex items-center space-x-4 md:space-x-8 ">
           <li className="hover:opacity-50 transition-all delay-75">
             <a target="_blank" href="https://dribbble.com/fasfashan" rel="noreferrer ">
               <Dribbble />
