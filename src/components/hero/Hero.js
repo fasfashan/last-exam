@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import LandingLogin from "/public/assets/Fashion Login .png";
 import MonyApp from "/public/assets/Mony-App.png";
-import Image from "next/image";
+import Image from "next/future/image";
 import Stocks from "/public/assets/Stocks.mp4";
 function Hero() {
   useEffect(() => {

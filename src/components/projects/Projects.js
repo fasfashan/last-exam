@@ -18,7 +18,7 @@ const Projects = () => {
     <section id="projects" className="mt-60 grid grid-cols-12 gap-8  gap-y-10 ">
       <div data-aos="fade-down" data-aos-duration="1500" className="md:col-span-6 col-span-12 ">
         <div>
-          <Image src={Niagahoster} alt="Lomba Landing Page Niagahoster" className="shadow-lg rounded-md" />
+          <Image src={Niagahoster} alt="Lomba Landing Page Niagahoster" className="shadow-lg " />
           <div className="flex gap-4 mt-8">
             <Tagsprogress>Design</Tagsprogress>
             <Tagsprogress>Landing page</Tagsprogress>
@@ -40,7 +40,7 @@ const Projects = () => {
       </div>
       <div data-aos="fade-up" data-aos-duration="1500" className="md:col-span-6 col-span-12 ">
         <div>
-          <Image src={Prowork} className="shadow-lg rounded-md" />
+          <Image src={Prowork} className="shadow-lg" />
           <div className="flex gap-4 mt-8">
             <Tagsprogress>Design</Tagsprogress>
             <Tagsprogress>Web Apps</Tagsprogress>
@@ -52,9 +52,8 @@ const Projects = () => {
           <p className="text-secondary text-lg">Memudahkan pengguna mengikuti saham dan pasar. Pengguna dapat melihat chart pergerakan naik turun saham, harga beli dan jual, dan sebuah CTA untuk membeli saham tersebut.</p>
         </div>
         <div className="flex items-center space-x-2">
-          <Link href="/">
-            <a className="text-lg font-semibold underline text-primary">In Progress</a>
-          </Link>
+          <a className="text-lg font-semibold underline text-primary">In Progress</a>
+
           <FiEdit2 />
         </div>
       </div>

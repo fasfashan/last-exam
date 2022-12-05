@@ -11,8 +11,28 @@ import Wireframe1 from "/public/assets/wireframe-1.webp";
 import Wireframe2 from "/public/assets/wireframe-2.webp";
 import Highfidelity1 from "/public/assets/High-fidelity-1.webp";
 import Highfidelity2 from "/public/assets/High-fidelity.webp";
+import Result from "/public/assets/result.webp";
 import Link from "next/link";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { useState, useEffect } from "react";
+import { Github } from "../../public/assets/Github";
 const lombaniagahoster = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    });
+  }, []);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <Seo templateTitle="Lomba Landing Page" />
@@ -75,18 +95,18 @@ const lombaniagahoster = () => {
         </div>
         <div className="mt-36">
           <h3 className="md:text-4xl text-2xl font-semibold text-primary">Wireframe</h3>
-          <p className="text-lg text-secondary mt-2 mb-4">
+          <p className="text-lg text-secondary mt-2 mb-8">
             Saya memang senang memulai wireframe dari coret-coretan kertas seperti foto di bawah ini, alasannya karena terasa lebih leluasa ketimbang menggunakan tools. Saya suka kutipan dari buku Petunjuk UX milik @halodesigners
             “High-fi memang tujuan akhir kita, namun low-fi tempatnya menemukan kejelasan (clarity) dari alur kerja yang product kita ingin capai.”
           </p>
 
           <Image src={Lowfidelity} />
-          <p className="text-lg text-secondary mt-2 mb-4">Setelah coret-coret di kertas, barulah saya membuatnya menggunakan Figma.</p>
+          <p className="text-lg text-secondary mt-2 mb-8">Setelah coret-coret di kertas, barulah saya membuatnya menggunakan Figma.</p>
           <div className="gap-y-4 flex flex-col">
             <Image src={Wireframe1} />
             <Image src={Wireframe2} />
           </div>
-          <p className="text-lg text-secondary mt-2 mb-4">Setelah membuat wireframe, saya memiliki 5 section yang berisi konten sesuai dengan kriteria pemenang, di antaranya adalah: </p>
+          <p className="text-lg text-secondary mt-2 mb-8">Setelah membuat wireframe, saya memiliki 5 section yang berisi konten sesuai dengan kriteria pemenang, di antaranya adalah: </p>
           <ol type="1">
             <li className="text-lg text-secondary mt-2">1. Kesesuaian Tema, Kualitas Konten, Ide & Kreativitas Konten</li>
             <li className="text-lg text-secondary mt-2">2. Design website.</li>
@@ -97,7 +117,7 @@ const lombaniagahoster = () => {
           </p>
         </div>
         <div className="mt-36">
-          <h3 className="md:text-4xl text-2xl font-semibold text-primary mb-4">Design High Fidelity</h3>
+          <h3 className="md:text-4xl text-2xl font-semibold text-primary mb-8">Design High Fidelity</h3>
 
           <div className="gap-y-4 flex flex-col">
             <Image src={Highfidelity1} />
@@ -107,12 +127,27 @@ const lombaniagahoster = () => {
             Setelah proses desain selesai, saya akan slicing desain yang saya buat sendiri ke dalam HTML dan CSS. Website tersebut tertuang dalam domain http://fashafadillah.site namun karena saya lupa membayar domain, website tersebut
             sudah ter-blokir. Source code dapat dilihat di Github saya
           </p>
-          <div>
-            <a href="https://github.com/fasfashan/lomba-landing-page-niagahoster">
-              <img className="w-full" src="https://gh-card.dev/repos/fasfashan/lomba-landing-page-niagahoster.svg"></img>
-            </a>
-          </div>
+          <a target="_blank" href="https://github.com/fasfashan/lomba-landing-page-niagahoster">
+            <div className="px-4 flex gap-4 items-center py-2 border border-neutral-300 hover:bg-neutral-100 rounded-md">
+              <div>
+                <Github />
+              </div>
+              <div className="flex  flex-col">
+                <p className="font-medium text-primary">lomba-landing-page-niagahoster</p>
+                <p className="text-secondary text-sm">Fasfashan</p>
+              </div>
+            </div>
+          </a>
         </div>
+        <div className="mt-36">
+          <h3 className="md:text-4xl text-2xl font-semibold text-primary">Result</h3>
+          <p className="text-lg text-secondary mt-2 mb-4">
+            Sayangnya saya belum bisa menjadi juara satu dalam lomba ini, namun saya sudah memberikan yang terbaik dalam kesempatan ini. Setelah saya melihat juara ke-1 dan ke-2 ternyata isi konten landing page mereka memang lebih baik dan
+            lebih detail.
+          </p>
+          <Image src={Result} />
+        </div>
+        <div className="hover:cursor-pointer"> {showTopBtn && <BsFillArrowUpCircleFill className="text-2xl fixed bottom-10 md:right-32 right-4 z-20 text-primary " onClick={goToTop} />} </div>
       </div>
     </>
   );
