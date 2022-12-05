@@ -1,10 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import Button from "../button/Button";
-import { HiChevronRight } from "react-icons/hi";
-import ButtonText from "../button/ButtonText";
-import Link from "next/link";
+
 function Hero() {
   useEffect(() => {
     AOS.init();
