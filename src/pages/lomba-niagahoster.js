@@ -16,7 +16,7 @@ import Link from "next/link";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { Github } from "../../public/assets/Github";
-const lombaniagahoster = () => {
+const Lombaniagahoster = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -153,4 +153,4 @@ const lombaniagahoster = () => {
   );
 };
 
-export default lombaniagahoster;
+export default Lombaniagahoster;
