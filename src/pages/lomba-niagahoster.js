@@ -127,7 +127,7 @@ const lombaniagahoster = () => {
             Setelah proses desain selesai, saya akan slicing desain yang saya buat sendiri ke dalam HTML dan CSS. Website tersebut tertuang dalam domain http://fashafadillah.site namun karena saya lupa membayar domain, website tersebut
             sudah ter-blokir. Source code dapat dilihat di Github saya
           </p>
-          <a target="_blank" href="https://github.com/fasfashan/lomba-landing-page-niagahoster">
+          <a rel="noreferrer target="_blank" href="https://github.com/fasfashan/lomba-landing-page-niagahoster">
             <div className="px-4 flex gap-4 items-center py-2 border border-neutral-300 hover:bg-neutral-100 rounded-md">
               <div>
                 <Github />
