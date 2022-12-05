@@ -23,7 +23,7 @@ function Header() {
   };
   return (
     <header className={` py-4   ${stickyClass}`}>
-      <nav className="container font-semibold  mx-auto max-w-7xl md:px-4 px-6  flex     justify-between  items-center ">
+      <nav className="container font-semibold  mx-auto max-w-7xl md:px-4 px-3  flex     justify-between  items-center ">
         <Link href="/">
           <a className="hover:opacity-50 transition-all delay-75  ">
             <Logo />
