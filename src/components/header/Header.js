@@ -29,10 +29,10 @@ function Header() {
           </a>
         </Link>
         <ul className="flex items-center md:space-x-4 space-x-2">
-          <a target="_blank" href="https://dribbble.com/fasfashan">
+          <a rel="noreferrer" target="_blank" href="https://dribbble.com/fasfashan">
             <Dribbble />
           </a>
-          <a target="_blank" href="https://dribbble.com/fasfashan">
+          <a rel="noreferrer" target="_blank" href="https://dribbble.com/fasfashan">
             <LinkedIn />
           </a>
         </ul>
