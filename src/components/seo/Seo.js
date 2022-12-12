@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const defaultMeta = {
   title: "Fasha Fadillah",
   siteName: "fashafadillah.xyz",
-  description: "Ini adalah situs pribadi milik saya.",
+  description: "This is my personal webiste. Showcase my projects, and some of my thoughts about design",
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: "https://fashafadillah.xyz",
   type: "website",

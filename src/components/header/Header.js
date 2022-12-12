@@ -18,12 +18,12 @@ function Header() {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 0 ? setStickyClass("sticky shadow-sm top-0 py-4 z-50 bg-white bg-opacity-40 border-b border-slate-200 backdrop-blur-lg ") : setStickyClass("border-none");
+      windowHeight > 0 ? setStickyClass("sticky shadow-sm top-0 py-4 z-50 bg-slate-900 bg-opacity-40 border-b border-slate-800 backdrop-blur-lg ") : setStickyClass("border-none");
     }
   };
   return (
     <header className={` py-4   ${stickyClass}`}>
-      <nav className="container font-semibold  mx-auto max-w-6xl md:px-4 px-3  flex     justify-between  items-center ">
+      <nav className="container font-semibold  mx-auto max-w-6xl md:px-4 px-6  flex     justify-between  items-center ">
         <Link href="/">
           <a className="hover:opacity-50 transition-all delay-75  ">
             <Logo />
