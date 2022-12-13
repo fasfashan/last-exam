@@ -12,7 +12,7 @@ function Hero() {
   }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" className="md:10 mt-4 ">
+    <div data-aos="fade-up" data-aos-duration="1500" className="mt-20 ">
       <div>
         <video autoPlay loop muted playsInline src={HeroVideo} />
         <p className="md:text-xl mt-6 max-w-3xl mx-auto sm:text-lg text-slate-400  text-center">
