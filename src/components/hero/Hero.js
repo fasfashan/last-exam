@@ -5,16 +5,17 @@ import LandingLogin from "/public/assets/Fashion Login .png";
 import MonyApp from "/public/assets/Mony-App.png";
 import Image from "next/future/image";
 import Stocks from "/public/assets/Stocks.mp4";
+import HeroVideo from "/public/assets/Hero-Video.mp4";
 function Hero() {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" className="md:mt-20 mt-16 ">
-      <div className="space-y-6 ">
-        <h1 className="md:text-6xl  text-center text-3xl  text-white font-semibold leading-tight ">Designer with a passion for creating beautiful experiences.</h1>
-        <p className="md:text-xl max-w-3xl mx-auto sm:text-lg text-slate-400  text-center">
+    <div data-aos="fade-up" data-aos-duration="1500" className="md:10 mt-4 ">
+      <div>
+        <video autoPlay loop muted playsInline src={HeroVideo} />
+        <p className="md:text-xl mt-6 max-w-3xl mx-auto sm:text-lg text-slate-400  text-center">
           Browse my <span className="font-medium text-cyan-300">portfolio</span>, learn more about me and my approach, and <span className="font-medium text-cyan-300">get in touch</span> through this website.
         </p>
       </div>
