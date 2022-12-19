@@ -10,7 +10,7 @@ function Footer() {
       <a
         target="_blank"
         rel="noreferrer"
-        href={data?.isPlaying ? data.songUrl : "https://open.spotify.com/user/erence21?si=yTsrZT5JSHOp7tn3ist7Ig"}
+        href={data?.isPlaying ? data.songUrl : "https://open.spotify.com/user/fasfashan?si=c347284baa8b4ea1"}
         className="relative flex mx-auto mb-4 items-start px-6 py-4 space-x-4 transition-shadow border rounded-md hover:shadow-md w-full md:max-w-fit"
       >
         <div>{data?.isPlaying ? <img className="w-20 rounded-md shadow-sm" src={data?.albumImageUrl} alt={data?.album} /> : <SiSpotify size={60} color={"#1ED760"} />}</div>
