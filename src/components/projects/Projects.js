@@ -5,7 +5,7 @@ import Tagsprogress from "../tags/Tagsprogress";
 import Link from "next/link";
 import "aos/dist/aos.css";
 import Image from "next/future/image";
-import Niagahoster from "/public/assets/Lomba-Niagahoster.webp";
+import Niagahoster from "/public/assets/Lomba-niagahoster.webp";
 import Staycation from "/public/assets/staycation.webp";
 import Mony from "/public/assets/mony-app.webp";
 import { FiExternalLink } from "react-icons/fi";
