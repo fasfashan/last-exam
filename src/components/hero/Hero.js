@@ -1,35 +1,44 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
-import LandingLogin from "/public/assets/Fashion Login .png";
-import MonyApp from "/public/assets/Mony-App.png";
-import Image from "next/future/image";
-import Stocks from "/public/assets/Stocks.mp4";
-import HeroVideo from "/public/assets/Hero-Video.mp4";
+import { useEffect } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Twitter from "../../../public/assets/Twitter.js";
+import LinkedIn from "../../../public/assets/LinkedIn.js";
+
 function Hero() {
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const [text] = useTypewriter({
+    words: ["Designer.", "Engineer."],
+    loop: {},
+    typeSpeed: "120",
+    deleteSpeed: "50",
+  });
+
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" className="mt-20 ">
+    <div data-aos="fade-down " data-aos-duration="1500" className="md:mt-32 mt-10    ">
       <div>
-        <video autoPlay loop muted playsInline src={HeroVideo} />
-        <p className="md:text-xl mt-6 max-w-3xl mx-auto sm:text-lg text-slate-400  text-center">
-          Browse my <span className="font-medium text-cyan-300">portfolio</span>, learn more about me and my approach, and <span className="font-medium text-cyan-300">get in touch</span> through this website.
+        <h1 className="md:text-8xl text-slate-900 text-4xl font-medium">
+          Hi! I'm Fasha, a User Interface <span className="underline font-bold bg-gradient-to-r from-sky-600 to-blue-600 text-transparent bg-clip-text">{text}</span>
+          <Cursor cursorColor="#0284c7" />
+        </h1>
+
+        <p className="md:mt-10 mt-6 text-slate-600 leading-relaxed max-w-3xl  md:text-2xl text-lg  ">
+          If you're looking for a designer who can bring your vision to fruition, you've come to the right place. Feel free to explore my work below.
         </p>
-      </div>
-      <div className="grid grid-cols-12  md:mt-20 mt-10 justify-items-between ">
-        <div className="md:col-span-4 flex-col  col-span-12 ">
-          <div className="flex items-center p-6 bg-slate-800 ring-slate-400 ring-1 rounded-md">
-            <Image src={LandingLogin} />
-          </div>
-          <div className=" mt-8 bg-slate-800 ring-slate-400 ring-1 rounded-md">
-            <Image src={MonyApp} />
-          </div>
-        </div>
-        <div className="md:col-span-8 md:ml-8 md:mt-0 mt-8 col-span-12 flex items-center bg-slate-800 ring-slate-400 ring-1 rounded-md">
-          <video autoPlay loop muted playsInline className="p-10 rounded-lg" src={Stocks} />
+
+        <div className="flex gap-6 mt-8 items-center ">
+          <a className="flex  gap-2 items-center" target="_blank" href="https://twitter.com/fasfashan" rel="noreferrer ">
+            <Twitter />
+            <span className="text-base text-slate-900 font-semibold">Twitter</span>
+          </a>
+
+          <a className="flex  gap-2 items-center" target="_blank" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/" rel="noreferrer ">
+            <LinkedIn />
+            <span className="text-base text-slate-900 font-semibold">LinkedIn</span>
+          </a>
         </div>
       </div>
     </div>

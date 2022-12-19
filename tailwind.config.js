@@ -9,6 +9,9 @@ module.exports = {
           "50%": { transform: "translateY(0)" },
         },
       },
+      backgroundImage: {
+        "hero-pattern": "url('/public/assets/Mony-App.png')",
+      },
 
       colors: {
         primary: "#0A2540",

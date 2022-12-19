@@ -22,11 +22,8 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <div className=" md:max-w-5xl justify-center flex flex-col  md:px-4 mx-auto px-6">
-        <main className="flex-1">
-          {children}
-          <div className="hover:cursor-pointer"> {showTopBtn && <BsFillArrowUpCircleFill className="text-4xl fixed bottom-10 md:right-32 right-4 z-20 text-slate-900 rounded-full p-2 bg-cyan-400 " onClick={goToTop} />} </div>
-        </main>
+      <div className="xl:max-w-6xl md:max-w-4xl justify-center flex flex-col   mx-auto px-6">
+        <main className="flex-1">{children}</main>
         <Footer />
       </div>
     </>

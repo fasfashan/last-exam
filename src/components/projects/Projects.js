@@ -1,119 +1,79 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import Tagsprogress from "../tags/Tagsprogress";
 import Link from "next/link";
 import "aos/dist/aos.css";
 import Image from "next/future/image";
-import Niagahoster from "/public/assets/Lomba Niagahoster.webp";
-import Prowork from "/public/assets/Prowork.webp";
-import Staycation from "/public/assets/staycationwebp.webp";
-import Editvideo from "/public/assets/Editingvideoonline.png";
-// import Designpresentation from "/public/assets/Design-Presentation.pdf";
-import { Document, Page } from "react-pdf";
-
-import { FiAlertCircle, FiEdit2, FiChevronRight } from "react-icons/fi";
+import Niagahoster from "/public/assets/Lomba-Niagahoster.webp";
+import Staycation from "/public/assets/staycation.webp";
+import Mony from "/public/assets/mony-app.webp";
+import { FiExternalLink } from "react-icons/fi";
 
 function Hero() {
   useEffect(() => {
     AOS.init();
   }, []);
 }
-const Projects = () => {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
+function Projects() {
   return (
-    <section id="projects" className="mt-60 grid grid-cols-12 md:gap-8  ">
-      <div data-aos="fade-down" data-aos-duration="1500" className="md:col-span-6 col-span-12 mt-20 ">
-        <div>
-          <Image src={Niagahoster} alt="Lomba Landing Page Niagahoster" className="shadow-lg " />
-          <div className="flex gap-4 mt-8">
-            <Tagsprogress>Design</Tagsprogress>
-            <Tagsprogress>Landing page</Tagsprogress>
-            <Tagsprogress>Development</Tagsprogress>
-          </div>
-        </div>
-        <div className="mt-4 space-y-2">
-          <h2 className=" text-white text-lg  font-bold tracking-wider">Lomba Landing Page Niagahoster</h2>
-          <p className="text-slate-400 text-lg">
-            Pertengahan Juni, ketika sedang asyik berselancar di Instagram, saya melihat postingan dari Niagahoster yang sedang mengadakan lomba membuat landing page. Lalu karena tertarik, saya mengunjungi detail artikel tersebut.{" "}
-          </p>
-        </div>
-        <div className="flex items-center space-x-1 mt-2">
-          <Link href="/lomba-niagahoster">
-            <a className="text-lg font-semibold  text-cyan-300">Read more</a>
-          </Link>
-          <FiChevronRight className="text-cyan-300 text-lg " />
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1500" className="md:col-span-6 col-span-12 mt-20 ">
-        <div>
-          <Image src={Prowork} className="shadow-lg" />
-          <div className="flex gap-4 mt-8">
-            <Tagsprogress>Design</Tagsprogress>
-            <Tagsprogress>Web Apps</Tagsprogress>
-            <Tagsprogress>Development</Tagsprogress>
-          </div>
-        </div>
-        <div className="mt-4 space-y-2">
-          <h2 className=" text-white text-lg  font-bold tracking-wider">Prowork: Coworking Space Web App</h2>
-          <p className="text-slate-400 text-lg">
-            Ruang coworking adalah ruang kerja bersama yang biasanya digunakan oleh pekerja lepas, pengusaha, pekerja jarak jauh, dan profesional independen lainnya. Website ini memudahkan mereka mencari tempat untuk bekerja.
-          </p>
-        </div>
-        <div className="flex items-center space-x-1 mt-2">
-          <a className="text-lg font-semibold  text-cyan-300">In Progress</a>
+    <ul data-aos="fade- " data-aos-duration="1500" className="mt-40 grid  gap-16 sm:grid-cols-2 items-start xl:grid-cols-2 ">
+      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+        <Link href="/lomba-niagahoster">
+          <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
+            <Image src={Niagahoster} className="rounded-xl" alt="Thumbnail for Landing Page Niagahoster" />
+            <div className="flex flex-col items-center mt-8 ">
+              <article className="space-y-4">
+                <div className="flex gap-4 items-center">
+                  <h2 className=" text-slate-900 text-lg font-semibold ">Lomba Niagahoster</h2>
+                  <FiExternalLink className="md:text-2xl text-lg" />
+                </div>
 
-          <FiAlertCircle className="text-cyan-300 text-lg " />
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1500" className="md:col-span-6 col-span-12 mt-20 ">
-        <div>
-          <Image src={Staycation} className="shadow-lg" />
-          <div className="flex gap-4 mt-8">
-            <Tagsprogress>Design</Tagsprogress>
-            <Tagsprogress>Web Apps</Tagsprogress>
-          </div>
-        </div>
-        <div className="mt-4 space-y-2">
-          <h2 className=" text-white text-lg  font-bold tracking-wider">Staycation Application</h2>
-          <p className="text-slate-400 text-lg">
-            StayCation adalah aplikasi untuk membantu masyarakat dalam menemukan rumah, hotel ataupun apartement yang bisa dijadikan sebagai tempat berlibur. Tempat yang disediakan biasanya memiliki lokasi yang dekat dengan wisata liburan.
-          </p>
-        </div>
-        <div className="flex items-center space-x-1 mt-2">
-          <a className="text-lg font-semibold  text-cyan-300">In Progress</a>
+                <p className="text-slate-600">While I was surfing on Instagram, I saw a post from Niagahoster which was holding a landing page making competition.</p>
+              </article>
+            </div>
+          </a>
+        </Link>
+      </li>
+      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+        <Link href="/">
+          <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
+            <Image src={Staycation} className="rounded-xl" alt="Thumbnail for Landing StayCation" />
+            <div className="flex flex-col items-center mt-8 ">
+              <article className="space-y-4">
+                <div className="flex gap-4 items-center">
+                  <h2 className=" text-slate-900 text-lg font-semibold ">StayCation</h2>
+                  <FiExternalLink className="md:text-2xl text-lg" />
+                  <Tagsprogress>In Progress</Tagsprogress>
+                </div>
 
-          <FiAlertCircle className="text-cyan-300 text-lg " />
-        </div>
-      </div>
-      <div data-aos="fade-down" data-aos-duration="1500" className="md:col-span-6 col-span-12 mt-20 ">
-        <div>
-          <Image src={Editvideo} className="shadow-lg" />
-          <div className="flex gap-4 mt-8">
-            <Tagsprogress>Design</Tagsprogress>
-            <Tagsprogress>Web Apps</Tagsprogress>
-          </div>
-        </div>
-        <div className="mt-4 space-y-2">
-          <h2 className=" text-white text-lg  font-bold tracking-wider">Editing Video Online</h2>
-          <p className="text-slate-400 text-lg">
-            Pengeditan video online adalah proses manipulasi dan menyusun ulang footage video untuk menciptakan produk akhir yang berkualitas dan profesional. Diperuntukan untuk streamer yang ingin membuat konten hasil live streaming mereka
-            sebelumnya.
-          </p>
-        </div>
-        <div className="flex items-center space-x-1 mt-2">
-          <a className="text-lg font-semibold  text-cyan-300">In Progress</a>
+                <p className="text-slate-600">StayCation is an application to help people find homes, hotels or apartments that can be used as vacation spots.</p>
+              </article>
+            </div>
+          </a>
+        </Link>
+      </li>
+      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+        <Link href="/">
+          <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
+            <Image src={Mony} alt="Mony App" className="rounded-xl" />
+            <div className="flex flex-col items-center mt-8 ">
+              <article className="space-y-4">
+                <div className="flex gap-4 items-center">
+                  <h2 className=" text-slate-900 text-lg font-semibold ">Mony App</h2>
+                  <FiExternalLink className="md:text-2xl text-lg" />
+                  <Tagsprogress>In Progress</Tagsprogress>
+                </div>
 
-          <FiAlertCircle className="text-cyan-300 text-lg " />
-        </div>
-      </div>
-    </section>
+                <p className="text-slate-600">Mony App is an application that makes it easy for users to pay for internet, electricity and other things</p>
+              </article>
+            </div>
+          </a>
+        </Link>
+      </li>
+    </ul>
   );
-};
+}
 
 export default Projects;
