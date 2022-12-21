@@ -2,10 +2,9 @@ import React from "react";
 
 import Seo from "../components/seo/Seo";
 import Image from "next/image";
-
+import LogoNiagahoster from "/public/assets/logo-niagahoster.png";
 import PreviewImage from "/public/assets/Preview-landing-page.webp";
 import FullDesign from "/public/assets/full-design.webp";
-
 import Result from "/public/assets/result.webp";
 
 const Lombaniagahoster = () => {

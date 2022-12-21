@@ -20,7 +20,7 @@ function Projects() {
   return (
     <ul data-aos="fade- " data-aos-duration="1500" className="mt-80 grid  gap-16 sm:grid-cols-2 items-start xl:grid-cols-2 ">
       <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
-        <Link href="/lomba-niagahoster">
+        <Link href="/lombaniagahoster">
           <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
             <Image src={Niagahoster} className="rounded-xl" alt="Thumbnail for Landing Page Niagahoster" />
             <div className="flex flex-col items-center mt-8 ">
