@@ -42,7 +42,7 @@ const Lombaniagahoster = () => {
           <div className="space-y-4">
             <h3 className="md:text-3xl text-2xl font-semibold text-slate-900">The Brief</h3>
             <p className="text-slate-600 md:text-2xl text-lg md:leading-relaxed">
-              The theme of the article is "Your Journey with Niagahoster". For example: Review about Niagahoster products and services, take advantage of Niagahoster blogs, ebooks, forums, events to help you learn.
+              The theme of the article is "Your Journey With Niagahoster". For example: Review about Niagahoster products and services, take advantage of Niagahoster blogs, ebooks, forums, events to help you learn.
             </p>
           </div>
           <div className="space-y-4">
