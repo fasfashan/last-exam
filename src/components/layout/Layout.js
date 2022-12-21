@@ -21,8 +21,11 @@ function Layout({ children }) {
   };
   return (
     <>
-      <Header />
-      <div className="xl:max-w-6xl md:max-w-4xl justify-center flex flex-col   mx-auto px-6">
+      <div
+        className="xl:max-w-6xl  justify-center flex flex-col 
+        mx-auto px-6"
+      >
+        <Header />
         <main className="flex-1">{children}</main>
         <Footer />
       </div>
