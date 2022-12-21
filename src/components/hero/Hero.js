@@ -49,19 +49,19 @@ function Hero() {
           </a>
         </Link>
 
-        <div className="flex gap-6 mt-8 items-center ">
+        <div className="flex gap-6 mt-8 items-center z-50 ">
           <a className="flex  gap-2 items-center" target="_blank" href="https://twitter.com/fasfashan" rel="noreferrer ">
             <Twitter />
             <span className="text-base text-slate-900 font-semibold">Twitter</span>
           </a>
 
-          <a className="flex  gap-2 items-center" target="_blank" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/" rel="noreferrer ">
+          <a className="flex z-100  gap-2 items-center" target="_blank" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/" rel="noreferrer ">
             <LinkedIn />
             <span className="text-base text-slate-900 font-semibold">LinkedIn</span>
           </a>
         </div>
       </div>
-      <div className="absolute opacity-25 md:top-10 top-60 md:right-10 -right-20 md:w-200 ">
+      <div className="absolute  opacity-25 md:top-10 top-96 md:right-10 -right-20 md:w-200 ">
         <PatternHero />
       </div>
     </div>

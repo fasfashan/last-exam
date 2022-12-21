@@ -16,12 +16,12 @@ function About() {
   return (
     <>
       <Seo templateTitle="About" />
-      <div data-aos="fade-up" data-aos-duration="800" className="grid gap-8 items-center md:mt-20 mt-10   grid-cols-12  gap-y-20">
+      <div data-aos="fade-up" data-aos-duration="800" className="grid md:gap-x-8 items-center md:mt-20 mt-10   grid-cols-12  gap-y-20">
         <div className="md:col-span-8 col-span-12 space-y-10 ">
           <h1 className="md:text-7xl text-5xl  leading-tight  font-bold">Love design and code. </h1>
           <p className="md:leading-relaxed text-slate-500 text-lg ">
             {/* <a className="text-sky-500 font-medium" rel="noreferrer" target="_blank" href="https://www.youtube.com/c/WebProgrammingUNPAS">
-              Shandika Galih (WebProgrammingUNPAS).
+              Shandika Ga`lih (WebProgrammingUNPAS).
             </a>{" "} */}
             Hi, I'm Fasha. I started learning web programming around the beginning of 2019. Starting from watching videos on Mr.{" "}
             <a className="text-sky-500 hover:text-sky-600 font-medium" rel="noreferrer" target="_blank" href="https://www.youtube.com/c/WebProgrammingUNPAS">
