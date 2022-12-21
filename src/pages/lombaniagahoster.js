@@ -2,20 +2,12 @@ import React from "react";
 
 import Seo from "../components/seo/Seo";
 import Image from "next/image";
-import LogoNiagahoster from "/public/assets/Logo-niagahoster.png";
+
 import PreviewImage from "/public/assets/Preview-landing-page.webp";
 import FullDesign from "/public/assets/full-design.webp";
-import Artikel from "/public/assets/artikel-lomba.png";
-import { FiExternalLink, FiEdit2 } from "react-icons/fi";
-import Designproses from "/public/assets/desainproses.png";
-import Moodboard from "/public/assets/moodboard.webp";
-import Lowfidelity from "/public/assets/low-fidelity.webp";
-import Wireframe1 from "/public/assets/wireframe-1.webp";
-import Wireframe2 from "/public/assets/wireframe-2.webp";
-import Highfidelity1 from "/public/assets/High-fidelity-1.webp";
-import Highfidelity2 from "/public/assets/High-fidelity.webp";
+
 import Result from "/public/assets/result.webp";
-import { Github } from "../../public/assets/Github";
+
 const Lombaniagahoster = () => {
   return (
     <>
