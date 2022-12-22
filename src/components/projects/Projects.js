@@ -19,50 +19,50 @@ function Hero() {
 function Projects() {
   return (
     <ul data-aos="fade- " data-aos-duration="1500" className="mt-80 grid  gap-16 sm:grid-cols-2 items-start xl:grid-cols-2 ">
-      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+      <li className="w-full rounded-2xl  flex flex-col md:p-6 p-4  bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
         <Link href="/lombaniagahoster">
           <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
             <Image src={Niagahoster} className="rounded-xl" alt="Thumbnail for Landing Page Niagahoster" />
             <div className="flex flex-col items-center mt-8 ">
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
-                  <h2 className=" text-slate-900 text-lg font-semibold ">Lomba Niagahoster</h2>
-                  <FiExternalLink className="md:text-2xl text-lg" />
+                  <h2 className=" text-gray-900 text-2xl font-medium font-title ">Lomba Niagahoster</h2>
+                  <FiExternalLink className="text-lg" />
                 </div>
 
-                <p className="text-slate-600 text-lg">While I was surfing on Instagram, I saw a post from Niagahoster which was holding a landing page making competition.</p>
+                <p className="text-gray-800  text-base md:text-lg  md:leading-relaxed   leading-normal">While I was surfing on Instagram, I saw a post from Niagahoster which was holding a landing page making competition.</p>
               </article>
             </div>
           </a>
         </Link>
       </li>
-      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+      <li className="w-full rounded-2xl  flex flex-col md:p-6 p-4  bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
         <Link href="/">
           <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
             <Image src={Staycation} className="rounded-xl" alt="Thumbnail for Landing StayCation" />
             <div className="flex flex-col items-center mt-8 ">
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
-                  <h2 className=" text-slate-900 text-lg font-semibold ">StayCation</h2>
-                  <FiExternalLink className="md:text-2xl text-lg" />
+                  <h2 className="  text-gray-900 text-2xl font-medium font-title">StayCation</h2>
+                  <FiExternalLink className="text-lg" />
                   <Tagsprogress>In Progress</Tagsprogress>
                 </div>
 
-                <p className="text-slate-600 text-lg">StayCation is an application to help people find homes, hotels or apartments that can be used as vacation spots.</p>
+                <p className="text-slate-800  text-base md:text-lg  md:leading-relaxed  leading-normal">StayCation is an application to help people find homes, hotels or apartments that can be used as vacation spots.</p>
               </article>
             </div>
           </a>
         </Link>
       </li>
-      <li className="w-full rounded-2xl border flex flex-col md:p-6 p-4 border-gray-300 bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
+      <li className="w-full rounded-2xl  flex flex-col md:p-6 p-4  bg-white  scale-100 hover:scale-[1.02] active:scale-[0.97] hover:shadow-2xl transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
         <Link href="/">
           <a className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300">
             <Image src={Mony} alt="Mony App" className="rounded-xl" />
             <div className="flex flex-col items-center mt-8 ">
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
-                  <h2 className=" text-slate-900 text-lg font-semibold ">Mony App</h2>
-                  <FiExternalLink className="md:text-2xl text-lg" />
+                  <h2 className=" text-gray-900 text-2xl font-medium font-title ">Mony App</h2>
+                  <FiExternalLink className="text-lg" />
                   <Tagsprogress>In Progress</Tagsprogress>
                 </div>
 

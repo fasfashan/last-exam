@@ -2,7 +2,7 @@ import React from "react";
 
 const Photoshop = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
       <g clip-path="url(#clip0_714_580)">
         <path d="M7.08336 0.5H32.9167C36.8334 0.5 40 3.66664 40 7.58336V32.4167C40 36.3334 36.8334 39.5001 32.9166 39.5001H7.08336C3.16664 39.5 0 36.3334 0 32.4166V7.58336C0 3.66664 3.16664 0.5 7.08336 0.5V0.5Z" fill="#001834" />
         <path

@@ -5,7 +5,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Twitter from "../../../public/assets/Twitter.js";
 import LinkedIn from "../../../public/assets/LinkedIn.js";
 import PatternHero from "../../../public/assets/PatternHero.js";
-import { FiChevronRight, FiArrowRight } from "react-icons/fi";
+import Dribbble from "/public/assets/Dribbble";
+import { FiArrowRight } from "react-icons/fi";
 import Button from "../button/Button.js";
 import Link from "next/link";
 function Hero() {
@@ -30,14 +31,14 @@ function Hero() {
   });
 
   return (
-    <div data-aos="fade-down " data-aos-duration="1500" className="md:mt-20 xl:px-0 md:px:6 grid grid-cols-12 mt-10  relative ">
-      <div className=" z-100  col-span-12">
-        <h1 className="md:text-8xl text-slate-900 text-5xl font-semibold">
-          UI <span className="underline font-bold bg-gradient-to-r from-sky-600 to-blue-600 text-transparent bg-clip-text">{text}</span>
+    <div data-aos="fade-down " data-aos-duration="1500" className="mt-20 xl:px-0 md:px:6 grid grid-cols-12   relative ">
+      <div className="   col-span-12">
+        <h1 className="md:text-8xl text-slate-900 font-title text-5xl font-medium">
+          UI <span className="">{text}</span>
           <Cursor cursorColor="#0284c7" />
         </h1>
 
-        <p className="md:mt-10 mt-6 text-slate-600 md:leading-relaxed leading-normal max-w-2xl  md:text-2xl text-lg transition-all  ">
+        <p className="md:mt-10 mt-6 text-slate-600 md:leading-relaxed leading-loose max-w-2xl  md:text-2xl text-lg transition-all  ">
           Hi there! Im' Fasha. If you're looking for a designer who can bring your vision to fruition, you've come to the right place. Feel free to explore my work below.
         </p>
 
@@ -52,12 +53,16 @@ function Hero() {
         <div className="flex gap-6 mt-8 items-center z-50 ">
           <a className="flex  gap-2 items-center" target="_blank" href="https://twitter.com/fasfashan" rel="noreferrer ">
             <Twitter />
-            <span className="text-base text-slate-900 font-semibold">Twitter</span>
+            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">Twitter</span>
           </a>
 
           <a className="flex z-100  gap-2 items-center" target="_blank" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/" rel="noreferrer ">
             <LinkedIn />
-            <span className="text-base text-slate-900 font-semibold">LinkedIn</span>
+            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">LinkedIn</span>
+          </a>
+          <a className="flex   gap-2 items-center" target="_blank" href="https://dribbble.com/fasfashan" rel="noreferrer ">
+            <Dribbble />
+            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">Dribbble</span>
           </a>
         </div>
       </div>

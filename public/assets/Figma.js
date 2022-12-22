@@ -2,7 +2,7 @@ import React from "react";
 
 const Figma = () => {
   return (
-    <svg className="fill-transparent" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none">
+    <svg className="fill-transparent" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
       <g clip-path="url(#clip0_711_555)">
         <path d="M13.6668 40C17.3469 40 20.3336 37.0133 20.3336 33.3333V26.6666H13.6668C9.98682 26.6666 7.00008 29.6533 7.00008 33.3333C7.00008 37.0133 9.98682 40 13.6668 40Z" fill="#0ACF83" />
         <path d="M7.00008 20C7.00008 16.32 9.98682 13.3333 13.6668 13.3333H20.3336V26.6665H13.6668C9.98682 26.6667 7.00008 23.68 7.00008 20Z" fill="#A259FF" />

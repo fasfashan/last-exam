@@ -19,6 +19,9 @@ module.exports = {
         backblue: "#FAFCFF",
         primarybg: "#635BFF",
       },
+      fontFamily: {
+        title: ["Lora"],
+      },
     },
   },
 
