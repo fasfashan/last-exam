@@ -9,7 +9,7 @@ import Dribbble from "/public/assets/Dribbble";
 import { FiChevronRight } from "react-icons/fi";
 import Button from "../button/Button.js";
 import Fasha from "/public/assets/fasha.webp";
-import Line from "/public/assets/line.png";
+
 import Image from "next/future/image";
 import Link from "next/link";
 function Hero() {
