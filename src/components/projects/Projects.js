@@ -28,7 +28,6 @@ function Projects() {
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
                   <h2 className=" text-gray-900 text-2xl font-medium font-title ">Lomba Niagahoster</h2>
-                  <FiExternalLink className="text-lg" />
                 </div>
 
                 <p className="text-gray-500  text-base md:text-lg  md:leading-relaxed   leading-normal">While I was surfing on Instagram, I saw a post from Niagahoster which was holding a landing page making competition.</p>
@@ -45,7 +44,7 @@ function Projects() {
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
                   <h2 className="  text-gray-900 text-2xl font-medium font-title">Re-design Comika.id</h2>
-                  <FiExternalLink className="text-lg" />
+
                   <Tagsprogress>In Progress</Tagsprogress>
                 </div>
 
@@ -63,7 +62,7 @@ function Projects() {
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
                   <h2 className="  text-gray-900 text-2xl font-medium font-title">StayCation</h2>
-                  <FiExternalLink className="text-lg" />
+
                   <Tagsprogress>In Progress</Tagsprogress>
                 </div>
 
@@ -81,7 +80,7 @@ function Projects() {
               <article className="space-y-4">
                 <div className="flex gap-4 items-center">
                   <h2 className=" text-gray-900 text-2xl font-medium font-title ">Mony App</h2>
-                  <FiExternalLink className="text-lg" />
+
                   <Tagsprogress>In Progress</Tagsprogress>
                 </div>
 

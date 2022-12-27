@@ -18,6 +18,7 @@ module.exports = {
         secondary: "#3A3A4C",
         backblue: "#FAFCFF",
         primarybg: "#635BFF",
+        warning: "#CD7B2E",
       },
       fontFamily: {
         title: ["Lora"],
