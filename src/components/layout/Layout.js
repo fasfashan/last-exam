@@ -22,7 +22,7 @@ function Layout({ children }) {
   return (
     <>
       <div
-        className="xl:max-w-6xl  justify-center flex flex-col 
+        className="xl:max-w-7xl  justify-center flex flex-col 
         mx-auto px-6"
       >
         <Header />

@@ -6,8 +6,11 @@ import Twitter from "../../../public/assets/Twitter.js";
 import LinkedIn from "../../../public/assets/LinkedIn.js";
 import PatternHero from "../../../public/assets/PatternHero.js";
 import Dribbble from "/public/assets/Dribbble";
-import { FiArrowRight } from "react-icons/fi";
+import { FiChevronRight } from "react-icons/fi";
 import Button from "../button/Button.js";
+import Fasha from "/public/assets/fasha.webp";
+import Line from "/public/assets/line.png";
+import Image from "next/future/image";
 import Link from "next/link";
 function Hero() {
   const [isHovering, setIsHovering] = useState(false);
@@ -26,49 +29,46 @@ function Hero() {
   const [text] = useTypewriter({
     words: ["Designer.", "Engineer."],
     loop: {},
-    typeSpeed: "120",
-    deleteSpeed: "50",
+    typeSpeed: "100",
+    deleteSpeed: "100",
   });
 
   return (
-    <div data-aos="fade-down " data-aos-duration="1500" className="mt-20 xl:px-0 md:px:6 grid grid-cols-12   relative ">
-      <div className="   col-span-12">
-        <h1 className="md:text-8xl text-slate-900 font-title text-5xl font-medium">
-          UI <span className="">{text}</span>
-          <Cursor cursorColor="#0284c7" />
+    <div data-aos="fade-down " data-aos-duration="1500" className="mt-10 xl:px-0 md:px:6 grid grid-cols-12 md:gap-x-16 gap-y-20 items-center  relative ">
+      <div className=" md:col-span-6  col-span-12">
+        <h1 className="md:text-8xl text-white font-title text-5xl font-medium">
+          UX{"  "}
+          <span>
+            {" "}
+            {text}
+            <Cursor />
+          </span>
         </h1>
 
-        <p className="md:mt-10 mt-6 text-slate-500 md:leading-relaxed leading-loose max-w-xl   text-lg transition-all  ">
-          Hi there! Im' Fasha. If you're looking for a designer who can bring your vision to fruition, you've come to the right place. Feel free to explore my work below.
+        <p className="md:mt-10 mt-6 text-gray-400 md:leading-relaxed leading-loose max-w-xl   text-lg transition-all  ">
+          Hi there! Im' Fasha. If you're looking for a<span className="text-sky-500 font-medium underline   underline-offset-8"> designer</span> who can bring your vision to{" "}
+          <span className="text-sky-500 font-medium underline   underline-offset-8"> fruition</span>, you've come to the right place. Feel free to explore my work below.
         </p>
+        <div className="flex items-center mt-6 gap-4 ">
+          <Link href="/about">
+            <a>
+              <Button className="tracking-wide gap-2  transition-all  ">
+                About <FiChevronRight />
+              </Button>
+            </a>
+          </Link>
 
-        <Link href="/about">
-          <a>
-            <Button onClick={handleMouseOver} onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut} className="tracking-wide gap-2 transition-all mt-6 ">
-              About me {isHovering && <FiArrowRight />}
-            </Button>
-          </a>
-        </Link>
-
-        <div className="flex gap-6 mt-8 items-center z-50 ">
-          <a className="flex  gap-2 items-center" target="_blank" href="https://twitter.com/fasfashan" rel="noreferrer ">
-            <Twitter />
-            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">Twitter</span>
-          </a>
-
-          <a className="flex z-100  gap-2 items-center" target="_blank" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/" rel="noreferrer ">
-            <LinkedIn />
-            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">LinkedIn</span>
-          </a>
-          <a className="flex   gap-2 items-center" target="_blank" href="https://dribbble.com/fasfashan" rel="noreferrer ">
-            <Dribbble />
-            <span className="text-sm hover:text-gray-600 text-gray-900 font-semibold">Dribbble</span>
+          <a href="mailto:pasapadilah1410@gmail.com" rel="noreferrer " className="flex hover:text-gray-400 text-white  gap-2 font-medium items-center">
+            Contact me <FiChevronRight />
           </a>
         </div>
       </div>
-      <div className="absolute  opacity-25 md:top-10 top-96 md:right-10 -right-20 md:w-200 ">
-        <PatternHero />
+      <div className=" md:col-span-6  col-span-12">
+        <Image className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500" src={Fasha} />
       </div>
+      {/* <div className="absolute   md:top-10 top-96 md:right-10 -right-20 md:w-200 ">
+        <PatternHero />
+      </div> */}
     </div>
   );
 }

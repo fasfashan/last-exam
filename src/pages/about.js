@@ -19,8 +19,8 @@ function About() {
       <Seo templateTitle="About" />
       <div data-aos="fade-up" data-aos-duration="800" className="grid md:gap-x-8 items-center md:mt-20 mt-10   grid-cols-12  gap-y-20">
         <div className="md:col-span-8 col-span-12 space-y-10 ">
-          <h1 className="md:text-7xl text-5xl  leading-tight  font-medium font-title">Love design and code. </h1>
-          <p className="md:leading-relaxed leading-loose  text-slate-500 text-lg ">
+          <h1 className="md:text-7xl text-white text-5xl  leading-tight  font-medium font-title">Love design and code. </h1>
+          <p className="md:leading-relaxed leading-loose  text-gray-400 text-lg ">
             {/* <a className="text-sky-500 font-medium" rel="noreferrer" target="_blank" href="https://www.youtube.com/c/WebProgrammingUNPAS">
               Shandika Ga`lih (WebProgrammingUNPAS).
             </a>{" "} */}
@@ -30,7 +30,7 @@ function About() {
             </a>{" "}
             . Then they have difficulties over time because they study alone without being guided by a tutor..
           </p>
-          <p className="md:leading-relaxed leading-loose text-slate-500 text-lg">
+          <p className="md:leading-relaxed leading-loose text-gray-400 text-lg">
             Long story short, since I started from graphic design, I decided to become a user interface designer. I learn from e-books, and also Twitter. There are several names that have helped me grow up to now, including:
             <a rel="noreferrer" target="_blank" href="https://twitter.com/dwinawan_" className="text-sky-500 hover:text-sky-600 font-medium">
               @Dwinawan
@@ -41,8 +41,8 @@ function About() {
             </a>
           </p>
           <div className="space-y-2">
-            <h3 className="text-lg font-medium text-slate-600">Current favorite tools/tech stack</h3>
-            <div className="flex max-w-fit rounded-lg p-3 gap-6 bg-sky-100 ">
+            <h3 className="text-lg font-medium text-gray-500">Current favorite tools/tech stack</h3>
+            <div className="flex max-w-fit rounded-lg p-3 gap-6 bg-neutral-700 ">
               <Photoshop />
               <Figma />
               <HTML />
@@ -50,9 +50,6 @@ function About() {
               <Tailwdind />
             </div>
           </div>
-        </div>
-        <div className="md:col-span-4 col-span-12">
-          <Image src={Fasha} />
         </div>
       </div>
     </>
