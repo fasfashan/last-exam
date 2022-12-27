@@ -38,7 +38,7 @@ function Hero() {
           <Cursor cursorColor="#0284c7" />
         </h1>
 
-        <p className="md:mt-10 mt-6 text-slate-600 md:leading-relaxed leading-loose max-w-2xl  md:text-2xl text-lg transition-all  ">
+        <p className="md:mt-10 mt-6 text-slate-500 md:leading-relaxed leading-loose max-w-xl   text-lg transition-all  ">
           Hi there! Im' Fasha. If you're looking for a designer who can bring your vision to fruition, you've come to the right place. Feel free to explore my work below.
         </p>
 
