@@ -38,6 +38,16 @@ export default function Seo(props) {
   return (
     <Head>
       <title>{meta.title}</title>
+      {/* Google tag (gtag.js) --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WYVY2J51J5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WYVY2J51J5');
+</script>
+{/* Google tag (gtag.js) --> */}
       <meta name="google-site-verification" content="RxuK-oLwPzkLO0j034iXE9WQ63YR5IUe33gY272Rqxk" />
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />

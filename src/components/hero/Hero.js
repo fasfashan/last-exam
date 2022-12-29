@@ -64,7 +64,7 @@ function Hero() {
         </div>
       </div>
       <div className=" md:col-span-6  col-span-12">
-        <Image className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500" src={Fasha} />
+        <Image alt="Fasha Fadillah" src={Fasha} />
       </div>
       {/* <div className="absolute   md:top-10 top-96 md:right-10 -right-20 md:w-200 ">
         <PatternHero />
